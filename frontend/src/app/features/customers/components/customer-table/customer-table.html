@@ -1,0 +1,171 @@
+<div class="card shadow-sm border-0">
+
+  <div class="card-header bg-white">
+
+    <div class="row align-items-center">
+
+      <div class="col-md-6">
+        <h5 class="mb-0">
+          Customers
+        </h5>
+      </div>
+
+      <div class="col-md-6">
+
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Search customers..." />
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="card-body p-0">
+
+    <div class="table-responsive">
+
+      <table class="table table-hover align-middle mb-0">
+
+        <thead class="table-light">
+
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Country</th>
+            <th>Risk</th>
+            <th>Status</th>
+            <th>Actions</th>
+          </tr>
+
+        </thead>
+
+        <tbody>
+
+          @for(customer of customers(); track customer.id) {
+
+          <tr>
+
+            <td>
+              {{ customer.id }}
+            </td>
+
+            <td>
+              {{ customer.name }}
+            </td>
+
+            <td>
+              {{ customer.email }}
+            </td>
+
+            <td>
+              {{ customer.country }}
+            </td>
+
+            <td>
+
+              <span
+                class="badge"
+                [ngClass]="{
+                  'text-bg-success': customer.risk === 'Low',
+                  'text-bg-warning': customer.risk === 'Medium',
+                  'text-bg-danger': customer.risk === 'High'
+                }">
+
+                {{ customer.risk }}
+
+              </span>
+
+            </td>
+
+            <td>
+
+              <span
+                class="badge"
+                [ngClass]="{
+                  'text-bg-success': customer.status === 'Active',
+                  'text-bg-warning': customer.status === 'Review',
+                  'text-bg-danger': customer.status === 'Blocked'
+                }">
+
+                {{ customer.status }}
+
+              </span>
+
+            </td>
+
+            <td>
+
+              <button
+                class="btn btn-sm btn-outline-primary me-2">
+
+                View
+
+              </button>
+
+              <button
+                class="btn btn-sm btn-outline-secondary">
+
+                Edit
+
+              </button>
+
+            </td>
+
+          </tr>
+
+          }
+
+        </tbody>
+
+      </table>
+
+    </div>
+
+  </div>
+
+  <div class="card-footer bg-white">
+
+    <div
+      class="d-flex justify-content-between align-items-center">
+
+      <small>
+        Showing 1-10 of 250 customers
+      </small>
+
+      <nav>
+
+        <ul class="pagination pagination-sm mb-0">
+
+          <li class="page-item">
+            <a class="page-link">Previous</a>
+          </li>
+
+          <li class="page-item active">
+            <a class="page-link">1</a>
+          </li>
+
+          <li class="page-item">
+            <a class="page-link">2</a>
+          </li>
+
+          <li class="page-item">
+            <a class="page-link">3</a>
+          </li>
+
+          <li class="page-item">
+            <a class="page-link">Next</a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+    </div>
+
+  </div>
+
+</div>

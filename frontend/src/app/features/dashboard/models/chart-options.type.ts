@@ -2,7 +2,8 @@ import {
     ApexChart,
     ApexLegend,
     ApexResponsive,
-    ApexNonAxisChartSeries
+    ApexNonAxisChartSeries,
+    ApexStroke
 } from 'ng-apexcharts';
 
 export type DonutChartOptions = {
@@ -18,9 +19,7 @@ export type LineChartOptions = {
     xaxis: {
         categories: string[];
     }
-    stroke: {
-        curve: string;
-    }
+    stroke: ApexStroke;
     legend: ApexLegend;
 };
 export type barChartOptions = {

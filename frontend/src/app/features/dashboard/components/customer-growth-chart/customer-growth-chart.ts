@@ -46,6 +46,6 @@ export class CustomerGrowthChart {
       show: true,
       position: 'top',
     }
-  } as const;
+  };
         
 }

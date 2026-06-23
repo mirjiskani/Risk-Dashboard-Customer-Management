@@ -1,0 +1,66 @@
+[
+  {
+    "id": 1,
+    "name": "John Doe",
+    "email": "john@example.com",
+    "country": "USA",
+    "risk": "Low",
+    "status": "Active"
+  },
+  {
+    "id": 2,
+    "name": "Jane Smith",
+    "email": "jane@example.com",
+    "country": "UK",
+    "risk": "Medium",
+    "status": "Active"
+  },
+  {
+    "id": 3,
+    "name": "Bob Wilson",
+    "email": "bob@example.com",
+    "country": "Canada",
+    "risk": "High",
+    "status": "Review"
+  },
+  {
+    "id": 4,
+    "name": "Alice Brown",
+    "email": "alice@example.com",
+    "country": "USA",
+    "risk": "Low",
+    "status": "Active"
+  },
+  {
+    "id": 5,
+    "name": "Charlie Davis",
+    "email": "charlie@example.com",
+    "country": "Australia",
+    "risk": "Medium",
+    "status": "Blocked"
+  },
+  {
+    "id": 6,
+    "name": "Emily Johnson",
+    "email": "emily@example.com",
+    "country": "Germany",
+    "risk": "Low",
+    "status": "Active"
+  },
+  {
+    "id": 7,
+    "name": "Frank Miller",
+    "email": "frank@example.com",
+    "country": "France",
+    "risk": "High",
+    "status": "Review"
+  },
+  {
+    "id": 8,
+    "name": "Grace Lee",
+    "email": "grace@example.com",
+    "country": "Singapore",
+    "risk": "Low",
+    "status": "Active"
+  }
+]
